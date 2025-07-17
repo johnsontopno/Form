@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
     <link rel="stylesheet" href="Form.css">
-    <title>Document</title>
 </head>
+
 <body>
-    <div class="regfrom">
+    <div class="regform">
         <h1>Registration</h1>
     </div>
-        <div class="main">
-            <form>
-                <div id="name">
-                    <h2 class="name">Name</h2>
-                    <input class="firstname" type="text" name="first_name"><br>
-                    <label class="firstlabel">first name</label>
-                    <input class="lastname" type="text" name="last_name">
-                    <label class="lastlabel">last name</label>
-                </div>
-                <h2 class="name">Company</h2>
-                <input class="company" type="text" name="company">
 
-                <h2 class="name">Email</h2>
-                <input class="email" type="text" name="email">
+    <div class="main">
+        <form action="#" method="post">
+            <!-- Name -->
+            <div id="name">
+                <h2 class="name">Name</h2>
+                <input class="firstname" type="text" name="first_name" placeholder="First Name" required>
+                <label class="firstlabel">First name</label>
 
-                <h2 class="name">Phone</h2>
-                <input class="code" type="text" name="area_code">
-                <label class="area-code">Area Code </label>
-                <input class="number" type="text" name="phone">
-                <label class="phone-number">Phone Number</label>
+                <input class="lastname" type="text" name="last_name" placeholder="Last Name" required>
+                <label class="lastlabel">Last name</label>
+            </div>
 
-                <h2 class="name">Subject</h2>
-                <select class="option" name="subject">
-                    <option disabled="disabled" selected="selected">--Choose Option </option>
-                    <option>Subject 1</option>
-                    <option>Subject 2</option>
-                    <option>Subject 3</option>
+            <!-- Company -->
+            <h2 class="name">Company</h2>
+            <input class="company" type="text" name="company" placeholder="Company Name">
 
-                </select>
-                <h2 id="coustomer">Area you beginner</h2>
-                <label class="radio">
-                    <input class="radio-one" type="radio" checked="checked" name="">
-                    <span class="checkmark"></span>Yes
-                </label>
-                <label class="radio">
-                    <input class="radio-two" type="radio"  name="">
-                    <span class="checkmark"></span>No
-                </label>
-                <button type="submit">
-                    Register
-                </button>
-            </form>
-        </div>
-    
+            <!-- Email -->
+            <h2 class="name">Email</h2>
+            <input class="email" type="email" name="email" placeholder="you@example.com" required>
+
+            <!-- Phone -->
+            <h2 class="name">Phone</h2>
+            <div class="phone-wrapper">
+                <input type="text" name="area_code" placeholder="Area Code" required>
+                <input type="text" name="phone_number" placeholder="Phone Number" required>
+            </div>
+
+
+            <!-- Subject -->
+            <h2 class="name">Subject</h2>
+            <select class="option" name="subject" required>
+                <option disabled selected>-- Choose Option --</option>
+                <option value="subject1">Subject 1</option>
+                <option value="subject2">Subject 2</option>
+                <option value="subject3">Subject 3</option>
+            </select>
+
+            <!-- Beginner Radio -->
+            <h2 class="name">Are you a beginner?</h2>
+            <div class="radio-group">
+                <label><input type="radio" name="beginner" value="yes" checked> Yes</label>
+                <label><input type="radio" name="beginner" value="no"> No</label>
+            </div>
+
+
+            <!-- Submit -->
+            <button type="submit">Register</button>
+        </form>
+    </div>
 </body>
+
 </html>
