@@ -16,7 +16,7 @@ body {
 
 /* Header */
 .regform {
-  max-width: 800px;
+  max-width: 600px;
   margin: auto;
   background: rgba(0, 0, 0, 0.7);
   text-align: center;
@@ -34,7 +34,7 @@ body {
 
 /* Main Form */
 .main {
-  max-width: 800px;
+  max-width: 600px;
   margin: auto;
   background: rgba(0, 0, 0, 0.65);
   padding: 30px;
