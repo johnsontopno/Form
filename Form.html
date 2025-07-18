@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="Form.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Registration</title>
+  <link rel="stylesheet" href="form.css" />
 </head>
-
 <body>
-    <div class="regform">
-        <h1>Registration</h1>
-    </div>
 
-    <div class="main">
-        <form action="#" method="post">
-            <!-- Name -->
-            <div id="name">
-                <h2 class="name">Name</h2>
-                <input class="firstname" type="text" name="first_name" placeholder="First Name" required>
-                <label class="firstlabel">First name</label>
+  <div class="regform">
+    <h1>Registration</h1>
+  </div>
 
-                <input class="lastname" type="text" name="last_name" placeholder="Last Name" required>
-                <label class="lastlabel">Last name</label>
-            </div>
+  <div class="main">
+    <form action="#" method="post">
 
-            <!-- Company -->
-            <h2 class="name">Company</h2>
-            <input class="company" type="text" name="company" placeholder="Company Name">
+      <!-- Full Name -->
+      <div class="form-group-row">
+        <div class="form-group">
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+        </div>
+        <div class="form-group">
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+        </div>
+      </div>
 
-            <!-- Email -->
-            <h2 class="name">Email</h2>
-            <input class="email" type="email" name="email" placeholder="you@example.com" required>
+      <!-- Company -->
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" placeholder="Company Name">
+      </div>
 
-            <!-- Phone -->
-            <h2 class="name">Phone</h2>
-            <div class="phone-wrapper">
-                <input type="text" name="area_code" placeholder="Area Code" required>
-                <input type="text" name="phone_number" placeholder="Phone Number" required>
-            </div>
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
 
+      <!-- Phone -->
+      <div class="form-group-row">
+        <div class="form-group">
+          <label for="area_code">Area Code</label>
+          <input type="text" id="area_code" name="area_code" placeholder="e.g. 91" required>
+        </div>
+        <div class="form-group">
+          <label for="phone_number">Phone Number</label>
+          <input type="text" id="phone_number" name="phone_number" placeholder="Phone Number" required>
+        </div>
+      </div>
 
-            <!-- Subject -->
-            <h2 class="name">Subject</h2>
-            <select class="option" name="subject" required>
-                <option disabled selected>-- Choose Option --</option>
-                <option value="subject1">Subject 1</option>
-                <option value="subject2">Subject 2</option>
-                <option value="subject3">Subject 3</option>
-            </select>
+      <!-- Subject -->
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject" required>
+          <option disabled selected value="">-- Choose Option --</option>
+          <option value="subject1">Subject 1</option>
+          <option value="subject2">Subject 2</option>
+          <option value="subject3">Subject 3</option>
+        </select>
+      </div>
 
-            <!-- Beginner Radio -->
-            <h2 class="name">Are you a beginner?</h2>
-            <div class="radio-group">
-                <label><input type="radio" name="beginner" value="yes" checked> Yes</label>
-                <label><input type="radio" name="beginner" value="no"> No</label>
-            </div>
+      <!-- Beginner -->
+      <div class="form-group">
+        <label>Are you a beginner?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="beginner" value="yes" checked> Yes</label>
+          <label><input type="radio" name="beginner" value="no"> No</label>
+        </div>
+      </div>
 
+      <!-- Submit -->
+      <div class="form-group">
+        <button type="submit">Register</button>
+      </div>
 
-            <!-- Submit -->
-            <button type="submit">Register</button>
-        </form>
-    </div>
+    </form>
+  </div>
+
 </body>
-
 </html>
